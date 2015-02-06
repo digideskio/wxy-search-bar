@@ -1,1 +1,33 @@
 // out: wxy-search-bar.css
+
+input {
+  background-color: inherit;
+  border: none;
+  font-size: 20px;
+  outline: 0;
+  padding: 0;
+  color: inherit;
+  display: none;
+  -webkit-appearance: none;
+}
+
+#container {
+  width: 40px;
+  background-color: #00bcd4;
+  z-index: 1;
+  box-sizing: border-box;
+
+  &.show {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 16px;
+    margin-left: 0;
+
+    input {
+      display: block;
+    }
+  }
+}
