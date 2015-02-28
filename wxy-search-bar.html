@@ -3,15 +3,14 @@
 <polymer-element name="wxy-search-bar" attributes="value">
   <template>
     <link rel="stylesheet" href="wxy-search-bar.css">
-    <link rel="stylesheet" href="ui-search-bar.css">
-      <div id="container" center horizontal layout on-tap="{{onContainerTap}}">
-        <paper-icon-button icon="search" on-tap="{{onSearchTap}}"></paper-icon-button>
-        <input type="search" id="input"
-          value="{{value}}"
-          on-keyup="{{onKeyPress}}"
-          autocomplete="off"
-          flex>
-      </div>
+    <div id="container" center horizontal layout on-tap="{{onContainerTap}}">
+      <paper-icon-button icon="search" on-tap="{{onSearchTap}}"></paper-icon-button>
+      <input type="search" id="input"
+        value="{{value}}"
+        on-keyup="{{onKeyPress}}"
+        autocomplete="off"
+        flex>
+    </div>
   </template>
   <script src="wxy-search-bar.js"></script>
 </polymer-element>
